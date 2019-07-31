@@ -1,15 +1,14 @@
 package com.my_java_app;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class JavaHelloTest {
+class JavaHelloTest {
 
     @Test
-    public void testGetHello(){
+    void getHello() {
         JavaHello javaHello = new JavaHello();
-        assert("Hello, I am compiling Java with groovy.".equals(javaHello.getHello()));
+        assertEquals("Hello, I am compiling Java with groovy.", javaHello.getHello());
     }
-
 }
